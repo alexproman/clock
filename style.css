@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(196, 187, 204);
+}
+
+.round {
+
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(78, 82, 82);
+    border: 9px solid #5e5f5f;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 0 30px #218d9bd0;
+}
+
+.round::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    background-color: #3fdaee;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.hands{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hands .arrow{
+    position: absolute;
+    bottom: 50%;
+    width: 5px;
+    height: 200px;
+    background-color: #fff;
+    transform-origin: bottom center;
+    border-radius: 50% 50% 0 0;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    -ms-border-radius: 50% 50% 0 0;
+    -o-border-radius: 50% 50% 0 0;
+    z-index: 9;
+}
+.arrow.hours{
+    width: 11px;
+    height: 140px;
+    background-color: #218d9bd0;
+    box-shadow: 3px 3px 5px #333;
+    z-index: 7;
+}
+.arrow.minutes{
+    width: 11px;
+    height: 180px;
+    background-color: #218d9bd0;
+    box-shadow: 3px 3px 5px #333;
+    z-index: 8;
+}
+
+.numbers .number {
+    position: absolute;
+    color: #3fdaee;
+    font-size: 40px;
+    font-family: 700;
+    text-shadow:
+        1px 0 #fff,
+        -1px 0 #fff,
+        0 1px 0 #fff, 
+        0 1px #fff;
+
+}
+.number.twelve{
+    top: 25px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.number.six{
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.number.three{
+    right: -5px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.number.nine{
+    left: 20px;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.mark-sign{
+    position: absolute;
+    width: 6px;
+    height: 30px;
+    background-color: #3fdaee;
+}
+/* .mark-sign.mark12{
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+} */
+/* .mark-sign.mark6{
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+} */
+/* .mark-sign.mark3{
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%) rotate(90deg);
+    -webkit-transform: translate(-50%,-50%) rotate(90deg);
+    -moz-transform: translate(-50%,-50%) rotate(90deg);
+    -ms-transform: translate(-50%,-50%) rotate(90deg);
+    -o-transform: translate(-50%,-50%) rotate(90deg);
+} */
+/* .mark-sign.mark9{
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%,-50%) rotate(90deg);
+    -webkit-transform: translate(-50%,-50%) rotate(90deg);
+    -moz-transform: translate(-50%,-50%) rotate(90deg);
+    -ms-transform: translate(-50%,-50%) rotate(90deg);
+    -o-transform: translate(-50%,-50%) rotate(90deg);
+} */
+.mark-sign.mark1{
+    top: 55px;
+    right: 26%;
+    transform: translate(-50%,-50%) rotate(60deg);
+    -webkit-transform: translate(-50%,-50%) rotate(30deg);
+    -moz-transform: translate(-50%,-50%) rotate(60deg);
+    -ms-transform: translate(-50%,-50%) rotate(60deg);
+    -o-transform: translate(-50%,-50%) rotate(60deg);
+}
+.mark-sign.mark2{
+    top: 27%;
+    right: 45px;
+    transform: translate(-50%,-50%) rotate(60deg);
+    -webkit-transform: translate(-50%,-50%) rotate(60deg);
+    -moz-transform: translate(-50%,-50%) rotate(60deg);
+    -ms-transform: translate(-50%,-50%) rotate(60deg);
+    -o-transform: translate(-50%,-50%) rotate(60deg);
+}
+.mark-sign.mark4{
+    bottom: 21%;
+    right: 45px;
+    transform: translate(-50%,-50%) rotate(120deg);
+    -webkit-transform: translate(-50%,-50%) rotate(120deg);
+    -moz-transform: translate(-50%,-50%) rotate(120deg);
+    -ms-transform: translate(-50%,-50%) rotate(120deg);
+    -o-transform: translate(-50%,-50%) rotate(120deg);
+}
+.mark-sign.mark5{
+    bottom: 20px;
+    right: 26%;
+    transform: translate(-50%,-50%) rotate(-30deg);
+    -webkit-transform: translate(-50%,-50%) rotate(-30deg);
+    -moz-transform: translate(-50%,-50%) rotate(-30deg);
+    -ms-transform: translate(-50%,-50%) rotate(-30deg);
+    -o-transform: translate(-50%,-50%) rotate(-30deg);
+}
+.mark-sign.mark7{
+    bottom: 22px;
+    left: 27%;
+    transform: translate(-50%,-50%) rotate(60deg);
+    -webkit-transform: translate(-50%,-50%) rotate(30deg);
+    -moz-transform: translate(-50%,-50%) rotate(60deg);
+    -ms-transform: translate(-50%,-50%) rotate(60deg);
+    -o-transform: translate(-50%,-50%) rotate(60deg);
+}
+.mark-sign.mark8{
+    bottom: 21%;
+    left: 53px;
+    transform: translate(-50%,-50%) rotate(60deg);
+    -webkit-transform: translate(-50%,-50%) rotate(60deg);
+    -moz-transform: translate(-50%,-50%) rotate(60deg);
+    -ms-transform: translate(-50%,-50%) rotate(60deg);
+    -o-transform: translate(-50%,-50%) rotate(60deg);
+}
+.mark-sign.mark10{
+    top: 27%;
+    left: 53px;
+    transform: translate(-50%,-50%) rotate(120deg);
+    -webkit-transform: translate(-50%,-50%) rotate(120deg);
+    -moz-transform: translate(-50%,-50%) rotate(120deg);
+    -ms-transform: translate(-50%,-50%) rotate(120deg);
+    -o-transform: translate(-50%,-50%) rotate(120deg);
+}
+.mark-sign.mark11{
+    top: 53px;
+    left: 27%;
+    transform: translate(-50%,-50%) rotate(150deg);
+    -webkit-transform: translate(-50%,-50%) rotate(150deg);
+    -moz-transform: translate(-50%,-50%) rotate(150deg);
+    -ms-transform: translate(-50%,-50%) rotate(150deg);
+    -o-transform: translate(-50%,-50%) rotate(150deg);
+}
+.logo img{
+    width: 140px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 6;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
